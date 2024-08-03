@@ -25,3 +25,24 @@
 - 처리해야 할 데이터를 분산해줌으로써, 프로세스 안정화
 - 결론적으로, 전송된 메세지의 보장성 제공
   
+<br/>
+
+<h3>4. 테스트 결과</h3>
+
+<h4>1. Apache JMeter을 사용하여 부하 테스트 진행</h4>
+- 초당 5000건, 60초간 총 300,000건의 Request 
+
+<br/>
+<br/>
+
+<h4>2. AMQP 도입 전</h4>
+
+![image](https://github.com/user-attachments/assets/ce7301a9-1e7a-47f4-ae16-1fe103d518e6)
+> 프로세스 과부하로 인하여 요청 전체를 처리하지 못 하고 Timeout이 발생한 데이터가 생김
+  
+<br/>
+
+<h4>3. AMQP 도입 후</h4>
+
+![image](https://github.com/user-attachments/assets/cd4f2f4c-2210-4828-ad8c-a11de964364c)
+> 리스닝중인 프로세스가 과부하가 발생하지 않게 관리하여 유실된 데이터 없이 전체 처리 완료
