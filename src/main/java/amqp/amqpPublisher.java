@@ -1,6 +1,5 @@
 package amqp;
 
-import amqp .amqpProducer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,7 +35,7 @@ public class amqpPublisher {
             response.setContentType("text/html");
             response.setCharacterEncoding("utf-8");
             PrintWriter writer = response.getWriter();
-            writer.println(request);
+            writer.println("[REQUEST]" + request);
             writer.close();
         }catch (IOException e1){
 
@@ -59,7 +58,7 @@ public class amqpPublisher {
             response.setContentType("text/html");
             response.setCharacterEncoding("utf-8");
             PrintWriter writer = response.getWriter();
-            writer.println(request);
+            writer.println("[REQUEST]" + request);
             writer.close();
         }catch (IOException e1){
 
