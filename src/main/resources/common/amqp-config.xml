@@ -13,7 +13,7 @@
 
 	<rabbit:listener-container requeue-rejected="false"
 		connection-factory="connectionFactory" prefetch="10">
-		<rabbit:listener ref="myListen"  queue-names="receiver.queue" />
+		<rabbit:listener ref="myListen" queue-names="receiver.queue" />
 	</rabbit:listener-container>
 
 	<bean id="messageListener" class="amqp.amqpListener" />

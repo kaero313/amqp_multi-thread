@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 
     <servlet>
-        <servlet-name>receiver</servlet-name>
+        <servlet-name>amqp_multi-thread</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -14,7 +14,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>receiver</servlet-name>
+        <servlet-name>amqp_multi-thread</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
