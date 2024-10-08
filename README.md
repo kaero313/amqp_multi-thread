@@ -244,6 +244,12 @@
 
 <br/>
 
+<h4>6-6. Zookeeper</h4>
+
+
+
+<br/>
+
 <h3>7. Kafka VS MQ(RabbitMQ)</h3>
 
 - Kafka : 이벤트 브로커
